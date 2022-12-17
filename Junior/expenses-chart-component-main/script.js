@@ -5,7 +5,7 @@ const daysChart = document.querySelectorAll('.dayChart')
 const data = api().then(resolve => resolve);
 
 async function api (){
-        const dataFetch = await fetch('http://127.0.0.1:5500/Front%20End%20Mentor/Junior/expenses-chart-component-main/data.json');
+        const dataFetch = await fetch('data.json');
         const dataJson = await dataFetch.json();
         let index = 0;
         let totalAmount = 0
