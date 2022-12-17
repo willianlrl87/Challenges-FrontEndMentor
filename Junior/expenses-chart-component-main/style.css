@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 :root{
     --color-bg-body: #f7e9dc;
     --color-inactiveTouchOrClick-bar: #ec755d;
@@ -14,6 +16,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body{
@@ -168,6 +171,51 @@ body{
     padding-top:5px;
 }
 
+.monthly-resume{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.monthly-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.monthly-total-text{
+    font-size: .9rem;
+    color: var(--color-font-three);
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly-total-value{
+    color: var(--color-font-two);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.last-month-percent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.last-month-percent-value{
+    color: var(--color-font-two);
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.last-month-percent-text{
+    color: var(--color-font-three);
+    font-size: .9rem;
+}
 
 /* Responsive */
 @media(max-width: 400px ){
