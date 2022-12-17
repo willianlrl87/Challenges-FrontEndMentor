@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* Settings from style guide included in this challenge */
+:root{
+    --color-soft-orange: hsl(35, 77%, 62%);
+    --color-soft-red: hsl(5, 85%, 63%);
+    --color-off-white: hsl(36, 100%, 99%);
+    --color-grayish-blue: hsl(233, 8%, 79%);
+    --color-dark-grayish-blue:hsl(236, 13%, 42%);
+    --color-very-dark-blue:hsl(240, 100%, 5%);
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-size: 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Starting Challenge */
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    padding: 30px 100px;
+    display: grid;
+    grid-template-areas:
+    "header     header      header"
+    "main   main    aside"
+    "main   main    aside"
+    "main   main    aside"
+    "section    section     section";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    margin-bottom: 30px;
+}
+
+#menuList{
+    display: flex;
+    list-style: none;
+}
+
+.menuItem{
+    padding: 10px;
+}
+
+main{
+    grid-area: main;
+    padding-right: 20px;
+}
+
+#mainNewsImg{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+#mainNewsInfo{
+    display: flex;
+}
+
+#mainNewsTitle{
+    flex: 1;
+}
+
+#mainNewsResumeAndButton{
+    flex: 1;
+}
+
+aside{
+    grid-area: aside;
+    background-color: var(--color-very-dark-blue);
+    color: white;
+}
+
+section{
+    grid-area: section;
+    display: flex;
+}
+
+.sectionNews{
+    display: flex;
+}
