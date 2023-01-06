@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
 
 /* Settings from style guide included in this challenge */
 :root{
@@ -27,11 +27,13 @@ p{
     box-sizing: border-box;
     padding:0;
     margin:0;
+    line-height: 23px;
 }
 
 body{
-    padding: 30px 100px;
+    padding: 80px 100px 80px 50px;
     display: grid;
+    background-color: var(--color-off-white);
     grid-template-areas:
     "header     header      header"
     "main   main    aside"
@@ -53,41 +55,111 @@ header{
 }
 
 .menuItem{
-    padding: 10px;
+    padding: 18px;
+    color: var(--color-dark-grayish-blue);
+    font-size: 17px;
 }
 
 main{
     grid-area: main;
     padding-right: 20px;
+    height: 500px;
 }
 
 #mainNewsImg{
     width: 100%;
-    height: 250px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
 #mainNewsInfo{
     display: flex;
+    color: var(--color-dark-grayish-blue);
+    padding: 20px 0;
 }
 
 #mainNewsTitle{
     flex: 1;
+    padding: 0;
+    padding-right: 80px;
+    color: var(--color-very-dark-blue);
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 1000;
+    letter-spacing: 1px;
 }
 
 #mainNewsResumeAndButton{
     flex: 1;
 }
 
+#mainNewsResume{
+    font-size: 14px;
+    word-spacing: 1px;
+    letter-spacing: .2px;
+    font-weight: 400;
+    transform: scale(1.05, 1.1);
+    padding-right: 10px;
+}
+
+#mainNewsResumeAndButton button{
+    margin: 20px 0;
+    margin-left: -10px;
+    padding: 10px 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background-color: var(--color-soft-red);
+    color: white;
+}
+
 aside{
     grid-area: aside;
     background-color: var(--color-very-dark-blue);
     color: white;
+    padding: 20px;
+    margin: 0 15px;
+    max-width: 350px;
+    height: 500px;
+}
+
+#asideTitle{
+    color: var(--color-soft-orange);
+    font-size: 40px;
+    padding: 30px 0;
+    font-weight: 700;
+}
+
+.asideNews{
+    margin-right: 15px;
+    border-bottom: 1px solid var(--color-dark-grayish-blue);
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.asideNews:last-child{
+    border: none;
+}
+
+.asideNewsTitle{
+    font-size: 20px;
+    font-weight: 800;
+    color:var(--color-off-white); 
+    padding-bottom: 10px;
+}
+
+.asideNewsResume{
+    color:var(--color-grayish-blue); 
+    transform: scale(1.07,1.07);
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 section{
     grid-area: section;
     display: flex;
+    margin-top: 70px;
 }
 
 .sectionNews{
