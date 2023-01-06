@@ -1,3 +1,5 @@
+Solution: https://willianlrl87.github.io/Challenges-FrontEndMentor/Junior/news-homepage-main/
+
 # Frontend Mentor - News homepage
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
