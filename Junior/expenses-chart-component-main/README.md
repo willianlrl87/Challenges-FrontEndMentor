@@ -1,3 +1,8 @@
+Solution: https://willianlrl87.github.io/Challenges-FrontEndMentor/Junior/expenses-chart-component-main/
+
+
+
+
 # Frontend Mentor - Expenses chart component
 
 ![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
